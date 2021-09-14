@@ -3,6 +3,9 @@
 output: {
 	path: path.join(__dirname,'dist'), // 输出文件的位置，必须是一个绝对路径。
 	filename: 'bundle.js',// 输出的文件名，值为一个字符串；可以是一个相对路径的字符串，也可以使用占位符
+	chunkFilename: '' ,//非入口的chunk的名字
+	library: '[name]' ,// 整个库向外面暴露的变量名
+	libraryTarget: 'window' //把变量名添加在哪里
 }
 ```
 ### filename配置项相关占位符
